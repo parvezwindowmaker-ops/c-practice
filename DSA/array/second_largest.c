@@ -8,11 +8,14 @@ int main()
 
     int largest_num = arr[0];
     int second_largest_num = arr[0];
-    for(int i = 0; i < n; i++)
+    for(int i = 1; i < n; i++)
     {
         if(arr[i] > largest_num) largest_num = arr[i];
-        if(arr[i] < largest_num && arr[i+1] < second_largest_num) second_largest_num = arr[i];
+        if(arr[i] < largest_num){
+            
+        } 
     }
-    printf("%d", second_largest_num);
+    printf("Largest : %d \n", largest_num);
+    printf("Second: %d \n", second_largest_num);
     return 0;
 }
